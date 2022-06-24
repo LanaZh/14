@@ -2,35 +2,41 @@
 //  AppDelegate.swift
 //  14
 //
-//  Created by Надежда Жукова on 16.06.2022.
 //
 
 import UIKit
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
+   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+       let tabBarVC = UITabBarController()
+       
+       let firstViewController = UIViewController()
+       firstViewController.view.backgroundColor = .gray
+       firstViewController.tabBarItem = UITabBarItem(title: "Поиск", image: .actions, tag: 3)
+       let secondViewController = UIViewController()
+       secondViewController.view.backgroundColor = .white
+       secondViewController.tabBarItem = UITabBarItem(title: "Альбомы", image: .remove, tag: 2)
+       let thirdViewController = UIViewController()
+       thirdViewController.tabBarItem = UITabBarItem(title: "Медиатека", image: .add, tag: 0)
+       thirdViewController.view.backgroundColor = .blue
+       let fourViewController = UIViewController()
+       fourViewController.tabBarItem = UITabBarItem(title: "Для Вас", image: .actions, tag: 1)
+       thirdViewController.view.backgroundColor = .brown
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+       // navigation
+       let secondNavController = UINavigationController(rootViewController: secondViewController)
+    
+       tabBarVC.setViewControllers([firstViewController, secondNavController, thirdViewController, fourViewController], animated: true)
+       tabBarVC.tabBar.backgroundColor = .white
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
+       window?.rootViewController = tabBarVC
+       window?.makeKeyAndVisible()
+       return true
+   }
 }
+
 
