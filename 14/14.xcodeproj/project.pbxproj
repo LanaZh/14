@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BB6FD9CC285BA6D200F85E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9CB285BA6D200F85E66 /* AppDelegate.swift */; };
-		BB6FD9CE285BA6D200F85E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9CD285BA6D200F85E66 /* SceneDelegate.swift */; };
 		BB6FD9D0285BA6D200F85E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9CF285BA6D200F85E66 /* ViewController.swift */; };
 		BB6FD9D3285BA6D200F85E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D1285BA6D200F85E66 /* Main.storyboard */; };
 		BB6FD9D5285BA6D400F85E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */; };
 		BB6FD9D8285BA6D400F85E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D6285BA6D400F85E66 /* LaunchScreen.storyboard */; };
+		BB6FD9E0285BA78600F85E66 /* AlbomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9DF285BA78600F85E66 /* AlbomCollectionView.swift */; };
+		BB6FD9E2285BA7BB00F85E66 /* AlbomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9E1285BA7BB00F85E66 /* AlbomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB6FD9C8285BA6D200F85E66 /* 14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6FD9CB285BA6D200F85E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB6FD9CD285BA6D200F85E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB6FD9CF285BA6D200F85E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB6FD9D2285BA6D200F85E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6FD9D7285BA6D400F85E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6FD9D9285BA6D400F85E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6FD9DF285BA78600F85E66 /* AlbomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbomCollectionView.swift; sourceTree = "<group>"; };
+		BB6FD9E1285BA7BB00F85E66 /* AlbomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				BB6FD9CB285BA6D200F85E66 /* AppDelegate.swift */,
-				BB6FD9CD285BA6D200F85E66 /* SceneDelegate.swift */,
 				BB6FD9CF285BA6D200F85E66 /* ViewController.swift */,
+				BB6FD9E1285BA7BB00F85E66 /* AlbomCollectionViewCell.swift */,
+				BB6FD9DF285BA78600F85E66 /* AlbomCollectionView.swift */,
 				BB6FD9D1285BA6D200F85E66 /* Main.storyboard */,
 				BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */,
 				BB6FD9D6285BA6D400F85E66 /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6FD9D0285BA6D200F85E66 /* ViewController.swift in Sources */,
+				BB6FD9E2285BA7BB00F85E66 /* AlbomCollectionViewCell.swift in Sources */,
 				BB6FD9CC285BA6D200F85E66 /* AppDelegate.swift in Sources */,
-				BB6FD9CE285BA6D200F85E66 /* SceneDelegate.swift in Sources */,
+				BB6FD9E0285BA78600F85E66 /* AlbomCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PKW23ALJN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PKW23ALJN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
