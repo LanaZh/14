@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BB6FD9CC285BA6D200F85E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9CB285BA6D200F85E66 /* AppDelegate.swift */; };
 		BB6FD9D0285BA6D200F85E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9CF285BA6D200F85E66 /* ViewController.swift */; };
-		BB6FD9D3285BA6D200F85E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D1285BA6D200F85E66 /* Main.storyboard */; };
 		BB6FD9D5285BA6D400F85E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */; };
 		BB6FD9D8285BA6D400F85E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FD9D6285BA6D400F85E66 /* LaunchScreen.storyboard */; };
 		BB6FD9E0285BA78600F85E66 /* AlbomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FD9DF285BA78600F85E66 /* AlbomCollectionView.swift */; };
@@ -17,10 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB021125287F4CE1004DD483 /* 14-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "14-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB6FD9C8285BA6D200F85E66 /* 14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6FD9CB285BA6D200F85E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6FD9CF285BA6D200F85E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB6FD9D2285BA6D200F85E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6FD9D7285BA6D400F85E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6FD9D9285BA6D400F85E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,10 +61,10 @@
 				BB6FD9CF285BA6D200F85E66 /* ViewController.swift */,
 				BB6FD9E1285BA7BB00F85E66 /* AlbomCollectionViewCell.swift */,
 				BB6FD9DF285BA78600F85E66 /* AlbomCollectionView.swift */,
-				BB6FD9D1285BA6D200F85E66 /* Main.storyboard */,
 				BB6FD9D4285BA6D400F85E66 /* Assets.xcassets */,
 				BB6FD9D6285BA6D400F85E66 /* LaunchScreen.storyboard */,
 				BB6FD9D9285BA6D400F85E66 /* Info.plist */,
+				BB021125287F4CE1004DD483 /* 14-Bridging-Header.h */,
 			);
 			path = 14;
 			sourceTree = "<group>";
@@ -102,6 +101,7 @@
 				TargetAttributes = {
 					BB6FD9C7285BA6D200F85E66 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -130,7 +130,6 @@
 			files = (
 				BB6FD9D8285BA6D400F85E66 /* LaunchScreen.storyboard in Resources */,
 				BB6FD9D5285BA6D400F85E66 /* Assets.xcassets in Resources */,
-				BB6FD9D3285BA6D200F85E66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BB6FD9D1285BA6D200F85E66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB6FD9D2285BA6D200F85E66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BB6FD9D6285BA6D400F85E66 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,14 +280,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PKW23ALJN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +297,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SZ.-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "14/14-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,14 +309,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PKW23ALJN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "SZ.-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "14/14-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -28,24 +28,5 @@ import UIKit
       
      return [first, second, third, fouth, five, six]
      }
- }
-
- class ViewController: UIViewController {
-
-     @IBOutlet weak var labelMyAlbom: UILabel!
-
-     private var albomCollectionView = AlbomCollectionView()
      
-     override func viewDidLoad() {
-         super.viewDidLoad()
-
-         self.title = "Альбомы"
-
-         view.addSubview(albomCollectionView)
-         albomCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-         albomCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-         albomCollectionView.topAnchor.constraint(equalTo: labelMyAlbom.bottomAnchor, constant: 10).isActive = true
-         albomCollectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-         albomCollectionView.set(cells: InfoAlbom.moveAlbom())
-     }
-}
+ }
